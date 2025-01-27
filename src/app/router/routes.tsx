@@ -1,11 +1,11 @@
-import {StartPage} from "../../pages/StartPage.tsx";
-import {About} from "../../pages/About.tsx";
+import {Loginin} from "../../pages/Loginin/module/Loginin.tsx";
+import {About} from "../../pages/About/module/About.tsx";
 import {Routes, Route} from "react-router";
 
 function AppRoutes() {
   return <Routes>
-    <Route path="/" element={<StartPage/>}/>
-    <Route path="/about" element={<About/>}/>
+    <Route path="/" element={<About/>}/>
+    <Route path="/loginin" element={<Loginin/>}/>
   </Routes>
 }
 
