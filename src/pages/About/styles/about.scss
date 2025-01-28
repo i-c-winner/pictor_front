@@ -13,5 +13,38 @@ position: relative;
 }
 .carousel {
   width: 80%;
+  margin: 0 auto;
+  padding: 0 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  .img {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100%; /* или любая нужная высота контейнера */
+    margin: 10px;
+    &_1 {
+      transform: rotate(15deg);
+    }
+    &_2 {
+      transform: rotate(-9deg);
+    }
+    &_3 {
+      max-height: 350px;
+      transform: rotate(10deg);
+    }
+    &_4 {
+      transform: rotate(-7deg);
+    }
+    &_5 {
+      transform: rotate(9deg);
+    }
+  }
 
+  .img img {
+    box-shadow: 5px 5px 15px white;
+    max-width: 100%; /* Ограничение ширины изображения */
+
+  }
 }
+
