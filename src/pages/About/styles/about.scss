@@ -8,7 +8,7 @@ position: relative;
   width: 100vw;
   height: 100vh;
   text-align: center;
-  padding: 50px 25px;
+  padding: 25px;
   box-sizing: border-box;
 }
 .carousel {
@@ -16,6 +16,7 @@ position: relative;
   margin: 0 auto;
   padding: 0 15px 15px;
   display: flex;
+  position: relative;
   justify-content: space-between;
   .img {
     display: flex;
@@ -23,6 +24,7 @@ position: relative;
     align-items: center; /* Центрирование по вертикали */
     height: 100%; /* или любая нужная высота контейнера */
     margin: 10px;
+    width: 300px;
     &_1 {
       transform: rotate(15deg);
     }
@@ -30,8 +32,9 @@ position: relative;
       transform: rotate(-9deg);
     }
     &_3 {
-      max-height: 350px;
       transform: rotate(10deg);
+      height: 500px;
+      width: auto;
     }
     &_4 {
       transform: rotate(-7deg);
@@ -43,8 +46,25 @@ position: relative;
 
   .img img {
     box-shadow: 5px 5px 15px white;
-    max-width: 100%; /* Ограничение ширины изображения */
+  }
+}
+.title-wrapper {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  bottom: 50px;
+}
+.text {
+  font-family: TitleFont, sans-serif ;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 0 0 5px black;
+  &_title {
+    font-weight: 800;
+    font-size: 8rem;
 
   }
 }
+
+
 

@@ -3,21 +3,32 @@ import {Box} from "@mui/material";
 import "react-multi-carousel/lib/styles.css";
 
 function About() {
-  if (import.meta.env.MODE === "development") {
+  if (import.meta.env.MODE === "product") {
     console.log("development");
+    console.log(import.meta.env.VITE_FONT_PATH); // Должно вывести "/fonts/dev/" или "/fonts/prod/"
+
   }
+  console.log(import.meta.env);
 
   return (
     <Box className="about">
       <div
         className="carousel"
       >
-        <div className={"img"}><img className={'img img_1'} src="../../../../public/images/carousel/1712837652574.jpeg"/></div>
-        <div className={"img"}><img className="img img_2" src="../../../../public/images/carousel/222683593504.jpg.webp"/></div>
-        <div className={"img"}><img className={"img img_3"} src="../../../../public/images/carousel/u26g8z4dynglriin2ko9cbccy8fy4g8s.jpg.webp"/></div>
-        <div className={"img"}><img className={"img img_4"} src="../../../../public/images/carousel/tanos.jpg"/></div>
-        <div className={"img"}><img className={"img img_5"} src="../../../../public/images/carousel/cat.jpg"/></div>
+        <div className={"img"}><img className={'img img_1'} src={`${import.meta.env.VITE_PATH_TO_IMAGES}/images/carousel/ckok.jpg`}/></div>
+        <div className={"img"}><img className="img img_2" src={`${import.meta.env.VITE_PATH_TO_IMAGES}/images/carousel/radiodemon.jpg`}/>
+        </div>
+        <div className={"img"}><img className={"img img_3"}
+          src={`${import.meta.env.VITE_PATH_TO_IMAGES}/images/carousel/egor.jpg`}/></div>
+        <div className={"img"}><img className={"img img_4"} src={`${import.meta.env.VITE_PATH_TO_IMAGES}/images/carousel/tanos.jpg`}/></div>
+        <div className={"img"}><img className={"img img_5"} src={`${import.meta.env.VITE_PATH_TO_IMAGES}/images/carousel/cat.jpg`}/></div>
+        <div className="title-wrapper">
+          <p className="text text_title">EGOR BELOUSOV</p>
+          <p className="text text_subtitle">юный художник и любитель океана</p>
+        </div>
+
       </div>
+
       <Spotlight/>
     </Box>
   )

@@ -1,5 +1,11 @@
 
 @import "resetCSS.css";
+@font-face {
+    font-family: 'TitleFont';
+    src: url('#{$font-path}Bona_Nova_SC/BonaNovaSC-Bold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     margin: 0;
     width: 100vw;
