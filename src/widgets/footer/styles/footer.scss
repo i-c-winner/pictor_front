@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: start;
+  color: white;
+  position: absolute;
+  bottom: 100px;
+
+  &__link {
+    margin-right: 20px;
+  }
+}

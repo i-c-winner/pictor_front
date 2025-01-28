@@ -1,0 +1,16 @@
+.menu{
+  padding: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  li{
+    font-family: TitleFont, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      color: gray;
+    }
+  }
+}

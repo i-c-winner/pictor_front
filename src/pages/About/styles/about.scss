@@ -4,12 +4,14 @@
   position: relative;
 }
 .about {
-position: relative;
+  position: relative;
   width: 100vw;
   height: 100vh;
   text-align: center;
   padding: 25px;
   box-sizing: border-box;
+
+
 }
 .carousel {
   width: 80%;
@@ -56,15 +58,23 @@ position: relative;
 }
 .text {
   font-family: TitleFont, sans-serif ;
-  color: white;
-  font-size: 2rem;
-  text-shadow: 0 0 5px black;
+
+
   &_title {
+    color: white;
+    text-shadow: 0 0 5px black;
     font-weight: 800;
     font-size: 8rem;
+  }
 
+  &_subtitle {
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 2rem;
   }
 }
-
+.card {
+  width: 50%;
+}
 
 
