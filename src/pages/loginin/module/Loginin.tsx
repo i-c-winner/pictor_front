@@ -1,6 +1,6 @@
 import {useForm, SubmitHandler} from "react-hook-form"
 import {Box, Button} from "@mui/material";
-import '../../About/styles/about.scss'
+import '../../about/styles/about.scss'
 
 type Inputs = {
   test: 'test',

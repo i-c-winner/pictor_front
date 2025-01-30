@@ -1,5 +1,5 @@
-import {Loginin} from "../../pages/Loginin/module/Loginin.tsx";
-import {About} from "../../pages/About/module/About.tsx";
+import {Loginin} from "../../pages/loginin/module/Loginin.tsx";
+import {About} from "../../pages/about/module/About.tsx";
 import {Routes, Route} from "react-router";
 import {Gallery} from "../../pages/gallery/module/Gallery.tsx";
 
