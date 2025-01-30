@@ -3,12 +3,12 @@ import "../styles/mainmenu.scss"
 import {useNavigate} from "react-router";
 
 function MainMenu() {
-  const navegate=useNavigate();
+  const navigate=useNavigate();
   return (
     <Box className="menu">
-      <MenuItem onClick={() => {navegate("/gallery")}}>Рисунки</MenuItem>
+      <MenuItem onClick={() => {navigate("/gallery")}}>Рисунки</MenuItem>
       <MenuItem onClick={() => {}}>Видео</MenuItem>
-      <MenuItem onClick={() => {}}>Лепка и фигуры</MenuItem>
+      <MenuItem onClick={() => {navigate("/admin")}}>Лепка и фигуры</MenuItem>
     </Box>
 
   )

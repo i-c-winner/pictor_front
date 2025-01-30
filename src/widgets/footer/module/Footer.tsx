@@ -6,8 +6,8 @@ import {useNavigate} from "react-router";
 
 function Footer() {
   const navigate = useNavigate();
-  function login() {
-    navigate("/loginin");
+  function admin() {
+    navigate("/admin");
   }
   return (
     <ButtonGroup className="footer">
@@ -25,7 +25,7 @@ function Footer() {
       ></Button>
       <Button
         endIcon={<Login/>}
-        onClick={login}
+        onClick={admin}
       ></Button>
 
     </ButtonGroup>
